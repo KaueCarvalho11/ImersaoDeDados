@@ -102,3 +102,5 @@ print(df.describe(include="object"))
 # Descrição dos dados numéricos
 print(df.describe())
 
+def carregar_dados():
+    return df
