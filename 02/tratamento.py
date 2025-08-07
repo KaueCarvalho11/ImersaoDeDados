@@ -30,3 +30,6 @@ print(df_limpo.isnull().sum())
 df_limpo = df_limpo.assign(ano = df_limpo['ano'].astype('int64'))
 print(df_limpo.info())
 print(df_limpo.head())
+
+def carregar_df_limpo():
+    return df_limpo
