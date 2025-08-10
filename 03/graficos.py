@@ -35,9 +35,6 @@ plt.ylabel('salario médio anual (em dólar)') # Título do eixo y
 plt.show()
 
 # Agrupando dados pelo parâmetro especificado, calculando média do outro campo especificado e ordenando valores em ordem decrescente
-
-print(df.groupby('senioridade')['salario_em_usd'].mean().sort_values(ascending=False))
-
 ordem = df.groupby('senioridade')['salario_em_usd'].mean().sort_values(ascending=False).index # Extrai apenas os índices de senioridade
 
 # Gráfico anteior, agora, ordenado em ordem descrescente por senoridade
@@ -79,7 +76,7 @@ plt.title('Boxplot senioridade')
 plt.xlabel('Senioridade')
 plt.show()
 
-#Criação de gráfico interativo
+#Criação do dataframe
 senioridade_media_salario = df.groupby('senioridade')['salario_em_usd'].mean().sort_values(ascending = False).reset_index()
 
 #Criação do gráfico
@@ -100,7 +97,7 @@ fig2 = px.pie(remoto_contagem,
 fig2.write_html("grafico_pizza.html")
 
 # Gerando gráfico de rosca
-fig3 =  px.pie(remoto_contagem, 
+fig3 = px.pie(remoto_contagem, 
               names = 'tipo_trabalho', 
               values = 'quantidade',
               title = 'proporção dos tipos de trabalho',
