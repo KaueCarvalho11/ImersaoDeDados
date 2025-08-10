@@ -1,9 +1,8 @@
 # Importando biblioteca para análise de dados
-
 import pandas as pd
 
 # Conteúdo de df será a base de dados
-df = pd.read_csv(r"C:\Users\kauec\Downloads\salaries.csv") # r indica que a string é 'raw'(crua), evitando a interpretação de caracteres especiais
+df = pd.read_csv("projeto/dataframe/salaries.csv") # r indica que a string é 'raw'(crua), evitando a interpretação de caracteres especiais
 
 # Por padrão, traz o conteúdo das 5 primeiras linhas (0 à 4)
 print(df.head())
