@@ -1,5 +1,3 @@
-from sys import path
-
 # Biblioteca para criação e configuração de aplicações web
 import streamlit as st # 'Criar' página = terminal: streamlit run programa.py
 import pandas as pd
@@ -8,7 +6,6 @@ import plotly.express as px
 # Biblioteca para conversão de siglas de país para formato ISO-3
 import pycountry
 
-path.append('../IMERSAODEDADOS/02')
 from tratamento import carregar_df_limpo
 
 df = carregar_df_limpo()

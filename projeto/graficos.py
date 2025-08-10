@@ -1,4 +1,3 @@
-from sys import path
 import pandas as pd
 
 # Bibliotecas para customização e exibição dos gráficos gerados
@@ -9,8 +8,6 @@ import seaborn as sns
 
 # Biblioteca para criação de gráficos interativos
 import plotly.express as px
-
-path.append('../IMERSAODEDADOS/02')
 
 from tratamento import carregar_df_limpo
 

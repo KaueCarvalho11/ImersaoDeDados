@@ -1,9 +1,3 @@
-# Permite importação de arquivos Python de outras pastas
-from sys import path 
-
-# Adicionando caminho para a busca por diretórios
-path.append('../IMERSAODEDADOS/01')
-
 # Importando função que retorna a base de dados criada no outro arquivo
 from programa import carregar_dados
 
