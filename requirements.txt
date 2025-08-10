@@ -1,4 +1,12 @@
-streamlit
+# Bibliotecas para manipulação de dados
 pandas
+numpy
+
+# Bibliotecas para visualização de dados e dashboards
+streamlit
+matplotlib
+seaborn
 plotly
+
+# Utilitários
 pycountry
